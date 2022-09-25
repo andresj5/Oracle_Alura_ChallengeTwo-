@@ -1,0 +1,82 @@
+header{
+    background-color:aqua;
+}
+
+.boton {
+    font-family:Arial;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 11px;
+    margin: 7px;
+    text-decoration: none;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 1px 5px #666666;
+    -moz-box-shadow: 0px 1px 5px #666666;
+    box-shadow: 0px 1px 5px #666666;
+    text-shadow: 0px 1px 6px #666666;
+    border: solid #756e71 2px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#45deba), to(#37a188));
+    background: -moz-linear-gradient(top, #45deba, #37a188);
+}
+
+.boton:hover {
+    background: #2c947a;
+}
+
+.login{
+    background-color: #756e71;
+    height: 500px;
+    /*margin: 20px auto;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.agregar-palabra{
+    height: 500px;
+    background-color: #cc608f;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.ingresoNuevaPalabra{
+    width: 40%;
+    height: 80px;
+    /*margin: 0 0 20px 10px;*/
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+    color: #2c947a;
+    border: 4px solid #2c947a;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+    resize: none;
+
+
+  }
+
+.juego{
+    background-color: #963e3e;
+    height:500px;
+    display: none;
+}
+
+.canvas{
+    background-color: antiquewhite;
+    margin:50px 50px 0 300px;
+    width: 600;
+    height: 400px;
+}
+
+.botones-juego{
+    margin: 400px 100px;
+}
+
+footer{
+    background-color: pink;
+}

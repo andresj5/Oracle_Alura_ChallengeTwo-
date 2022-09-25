@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagenes/vector.png">
+        <p>Juego del ahorcado</p>
+
+    </header>
+
+    <main>
+        <section class="inicio">
+            
+            <div class="login">
+                
+                <input class="boton" type= "button" value="Iniciar juego" onclick="iniciarJuego()">
+                <input class="boton" type= "button" value="Nueva palabra" onclick="nuevaPalabra()">
+            </div>
+
+            <div class="agregar-palabra"> 
+                <textarea class="ingresoNuevaPalabra"placeholder="Ingrese una palabra..." rows="5" cols="20"></textarea>
+                <div class="botones-palabra">
+                    <input class="boton" type= "button" value="Guardar y empezar" onclick="guardarPalabra()">
+                    <input class="boton" type= "button" value="Cancelar" onclick="cancelar()">
+                </div>
+            </div>
+        </section>
+
+        <section class="juego">
+            <div class="pantalla">
+                <canvas class ="canvas" width="100" height="100" style="border:1px solid #000555;"></canvas>
+            </div>
+            <div class="botones-juego">
+                <input class="boton" type="button" value="Rendirse" onclick="rendirse()" >
+                <input class="boton" type="button" value="Nuevo Juego" onclick="nuevoJuego()"> 
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
