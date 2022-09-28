@@ -12,8 +12,7 @@
 <body>
     <header>
         <img class="logo" src="imagenes/vector.png">
-        <p>Juego del ahorcado</p>
-
+        
     </header>
 
     <main>
@@ -36,11 +35,16 @@
 
         <section class="juego">
             <div class="pantalla">
-                <canvas class ="canvas" width="100" height="100" style="border:1px solid #000555;"></canvas>
+                <canvas class ="canvas" id="canvas-juego"></canvas>
             </div>
-            <div class="botones-juego">
-                <input class="boton" type="button" value="Rendirse" onclick="rendirse()" >
-                <input class="boton" type="button" value="Nuevo Juego" onclick="nuevoJuego()"> 
+            <div class="entrada">
+                <canvas class ="palabra-secreta" id ="palabra-sec"></canvas>
+                <div class="botones-juego">
+                    <input class="boton" type="button" value="Rendirse" onclick="rendirse()" >
+                    <input class="boton" type="button" value="Nuevo Juego" onclick="nuevoJuego()"> 
+
+                </div>
+                
             </div>
 
         </section>

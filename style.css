@@ -1,3 +1,10 @@
+html, body {
+  width:  100%;
+  height: 100%;
+  margin: 0;
+}
+
+
 header{
     background-color:aqua;
 }
@@ -64,19 +71,38 @@ header{
     background-color: #963e3e;
     height:500px;
     display: none;
+    place-items: center;
+
+}
+.pantalla{
+    display: inline; 
 }
 
 .canvas{
+    
     background-color: antiquewhite;
-    margin:50px 50px 0 300px;
-    width: 600;
-    height: 400px;
+    margin:20px 150px 60px 90px;
+    width: 600px;
+    height: 300px;
 }
 
+.entrada{
+    display: inline;
+    
+}
+
+.palabra-secreta{
+    background-color: antiquewhite;
+    margin: 100px 0px 10px 0px;
+    width: 400px;
+    height: 60px;  
+}
 .botones-juego{
-    margin: 400px 100px;
+    margin:10px 20px 0 10px;
+   
 }
 
 footer{
-    background-color: pink;
+    display:flex;
+    background-color: rgb(196, 192, 255);
 }
