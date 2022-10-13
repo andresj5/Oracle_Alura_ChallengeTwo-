@@ -81,7 +81,7 @@ header{
 .canvas{
     
     background-color: antiquewhite;
-    margin:20px 150px 60px 90px;
+    margin:20px 150px 60px 150px;
     width: 600px;
     height: 300px;
 }
@@ -95,7 +95,7 @@ header{
     background-color: antiquewhite;
     margin: 100px 0px 10px 0px;
     width: 400px;
-    height: 60px;  
+    height: 150px;  
 }
 .botones-juego{
     margin:10px 20px 0 10px;
