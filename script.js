@@ -344,16 +344,6 @@ function dibujoPrincipal(parte) {
     // pincel.stroke();
   }
 
-//   function dibujarAhorcado(parte){
-    // var canvas = document.getElementById("canvas-juego")
-    // var pincel = canvas.getContext('2d');
-    
-    // pincel.canvas.width  = window.innerWidth;
-    // pincel.canvas.height = window.innerHeight;
-
-    
-
-//   }
 
   function dibujarLineas(lineas){
     var canvas = document.getElementById("palabra-sec");
@@ -383,7 +373,7 @@ function jugar(palabra, correctas, incorrectas){
     var pincel = canvas.getContext("2d");
     var ordenadas1 = [];
     var ordenadas2 = [];
-    
+    console.log(palabra);
     dibujoPrincipal();
     dibujarLineas(palabra.length);
 
@@ -430,7 +420,10 @@ function jugar(palabra, correctas, incorrectas){
 
                     if(esIgual == true){
                         window.alert("Felicitaciones, ganaste! La palabra era: " + palabra);
-                        letrasPalabra = [];
+                        ordenadas1 = [];
+                        ordenadas2 = [];
+                        letrasPalabra = null;
+                        palabra  = null;
                         incorrectas = [];
                         salir()
                     }
@@ -463,7 +456,8 @@ function jugar(palabra, correctas, incorrectas){
                     if (incorrectas.length == 7){
                         window.alert("Perdiste, la palabra era: " + palabra );
                         incorrectas = [];
-                        letrasPalabra = [];
+                        letrasPalabra = null;
+                        palabra  = null;
                         salir();
                     }
                     
