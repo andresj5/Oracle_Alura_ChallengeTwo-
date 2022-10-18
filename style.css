@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Montserrat:wght@300&family=Open+Sans:ital,wght@1,500&display=swap');
+
 html, body {
   width:  100%;
   height: 100%;
@@ -6,11 +8,28 @@ html, body {
 
 
 header{
+    display:flex;
+    align-items: center;
     background-color:aqua;
+    flex-direction: row;
+    
+}
+
+header .logo{
+    margin: 20px;
+}
+
+ header h3{
+    
+    font-size: 40px;
+    font-weight: bold;
+    text-align: right;
+    font-family: 'Rubik', sans-serif;
+    
 }
 
 .boton {
-    font-family:Arial;
+    font-family:'Rubik', sans-serif;;
     color: #ffffff;
     font-size: 17px;
     padding: 11px;
@@ -63,15 +82,25 @@ header{
     font-size: 20px;
     border-radius: 10px;
     resize: none;
-
-
   }
+
+
 
 .juego{
     background-color: #963e3e;
     height:500px;
     display: none;
-    place-items: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    
+
+}
+.juego-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
 
 }
 .pantalla{
@@ -81,28 +110,58 @@ header{
 .canvas{
     
     background-color: antiquewhite;
-    margin:20px 150px 60px 150px;
-    width: 600px;
-    height: 300px;
+    
+    width: 400px;
+    height: 250px;
 }
 
 .entrada{
-    display: inline;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
     
 }
 
 .palabra-secreta{
     background-color: antiquewhite;
-    margin: 100px 0px 10px 0px;
     width: 400px;
     height: 150px;  
+    margin-top: 20px;
 }
 .botones-juego{
-    margin:10px 20px 0 10px;
+    margin-top:10px;
+    text-align: center;
+
+    
    
 }
 
 footer{
-    display:flex;
+    display: flex;
+    height:95px;
     background-color: rgb(196, 192, 255);
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+footer p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+}
+
+footer ul{
+    display: flex;
+    margin-left: 35%;
+    margin-top: 10px;
+
+}
+
+footer li img{
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    
+    
+    
 }
