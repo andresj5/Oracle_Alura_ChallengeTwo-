@@ -9,23 +9,35 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
+
 <body>
-    <header>
-        <img class="logo" src="imagenes/Vector.png">
-        <h3>Juego Del Ahorcado</h3>
+    <header class = "headerPrincipal">
+        <div class = "header-container">
+
+            <img class="logo" src="imagenes/Vector.png">
+            <h3 class="headerPrincipal-titulo">Juego Del Ahorcado</h3>
+            <nav class="header-nav">
+                <p></p><a class="nav-link" href="https://github.com/andresj5/Oracle_Alura_ChallengeTwo-">Ver código</a></p>
+                
+            </nav>
+        </div>
+
+        
     </header>
 
     <main>
         <section class="inicio">
             
             <div class="login">
-                
-                <input class="boton" type= "button" value="Iniciar juego" onclick="iniciarJuego()">
-                <input class="boton" type= "button" value="Nueva palabra" onclick="nuevaPalabra()">
+                <div class="botones-login">
+                    <input class="boton" type= "button" value="Iniciar juego" onclick="iniciarJuego()">
+                    <input class="boton" type= "button" value="Nueva palabra" onclick="nuevaPalabra()">    
+                </div>
             </div>
 
             <div class="agregar-palabra"> 
-                <textarea class="ingresoNuevaPalabra" placeholder="Ingrese una palabra, debe tener minimo tres letras y máximo 8, no se permiten números&#10 ni caracteres especiales..." rows="5" cols="20" minlength="3" maxlength="8" required ></textarea> 
+                <textarea class="ingresoNuevaPalabra" placeholder="Ingrese una palabra..." rows="5" cols="20" minlength="3" maxlength="8" required ></textarea> 
                 <div class="botones-palabra">
                     <input class="boton" type= "button" value="Guardar y empezar" onclick="guardarPalabra()">
                     <input class="boton" type= "button" value="Cancelar" onclick="cancelar()">
@@ -55,13 +67,16 @@
 
     </main>
 
-    <footer>
-        <div class="redes">
+    <footer class="footer-principal">
+        <div class="footer-container">
             <p>Realizado por: Andrés Díaz</p>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/andresdp5"><img src="imagenes/linkedin.png"></a></li>
-                <li><a href="https://www.instagram.com/andresj5/"><img src="imagenes/instagram.png"></a></li>
-            </ul>
+            <div class="redes">
+                <ul>
+                    <li class="redes-link"><a href="https://www.linkedin.com/in/andresdp5"><img src="imagenes/linkedin.png"></a></li>
+                    <li class="redes-link"><a href="https://www.instagram.com/andresj5/"><img src="imagenes/instagram.png"></a></li>
+                </ul>
+            </div>
+
         </div>
 
     </footer>

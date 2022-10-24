@@ -1,4 +1,4 @@
-var palabras = ["perro","oceano","teclado","columna","colombia","codigo","euforia","energia","seguro",""];   //
+var palabras = ["perro","oceano","teclado","columna","colombia","codigo","euforia","energia","seguro","ahorcado"];   //
 var palabra = "";
 var letra ="";
 var letrasPalabra = [];
@@ -90,7 +90,7 @@ function iniciarJuego(){
                     
                     if (letra == letrasPalabra[i]){
                         pincel2.beginPath();
-                        pincel2.fillStyle="blue";
+                        pincel2.fillStyle="#0A3871";
                         pincel2.font="bold 20px arial";
                         pincel2.textAlign="start";
                         pincel2.fillText(letrasPalabra[i],x,70);
@@ -116,7 +116,7 @@ function iniciarJuego(){
 
                 for (i2=0; i2<incorrectas.length; i2++ ){
                      pincel2.beginPath();
-                     pincel2.fillStyle="red";
+                     pincel2.fillStyle="#0A3871";
                      pincel2.font="bold 20px arial";
                      pincel2.textAlign="start";
                      pincel2.fillText(incorrectas[i2],x2,120);
@@ -127,7 +127,7 @@ function iniciarJuego(){
                     pincel2.clearRect(0, 0, canvas2.width, canvas2.height);
                     window.alert("Perdiste, la palabra era: " + palabra);
                     pincel2.beginPath();
-                    pincel2.fillStyle="red";
+                    pincel2.fillStyle="#0A3871";
                     pincel2.font="bold 20px arial";
                     pincel2.textAlign="start";
                     pincel2.fillText("Perdiste!",100,80);
@@ -149,18 +149,18 @@ function dibujoPrincipal(parte) {
     pincel.canvas.width  = window.innerWidth;
     pincel.canvas.height = window.innerHeight;
 
-    pincel.beginPath();
-    pincel.moveTo(0,500);
-    pincel.lineTo(1370,500);
-    pincel.lineWidth = 70;
-    pincel.strokeStyle = "green";
-    pincel.closePath();
-    pincel.stroke();
+    // pincel.beginPath();
+    // pincel.moveTo(0,500);
+    // pincel.lineTo(1370,500);
+    // pincel.lineWidth = 70;
+    // pincel.strokeStyle = "green";
+    // pincel.closePath();
+    // pincel.stroke();
     
     pincel.beginPath();
-    pincel.moveTo(500,500);
+    pincel.moveTo(500,600);
     pincel.lineTo(500,100);
-    pincel.strokeStyle="#591F0B"
+    pincel.strokeStyle="#0A3871";
     pincel.lineWidth = 15;
     pincel.closePath();
     pincel.stroke();
@@ -190,7 +190,7 @@ function dibujoPrincipal(parte) {
 
 
             pincel.beginPath();
-            pincel.strokeStyle = "black";
+            pincel.strokeStyle = "#0A3871";
             pincel.arc(795,180,30,0,2*Math.PI);
             pincel.closePath();
             pincel.stroke();
@@ -206,7 +206,7 @@ function dibujoPrincipal(parte) {
 
 
             pincel.beginPath();
-            pincel.strokeStyle = "black";
+            pincel.strokeStyle = "#0A3871";
             pincel.arc(795,180,30,0,2*Math.PI);
             pincel.closePath();
             pincel.stroke();
@@ -230,7 +230,7 @@ function dibujoPrincipal(parte) {
 
 
             pincel.beginPath();
-            pincel.strokeStyle = "black";
+            pincel.strokeStyle = "#0A3871";
             pincel.arc(795,180,30,0,2*Math.PI);
             pincel.closePath();
             pincel.stroke();
@@ -261,7 +261,7 @@ function dibujoPrincipal(parte) {
 
 
             pincel.beginPath();
-            pincel.strokeStyle = "black";
+            pincel.strokeStyle = "#0A3871";
             pincel.arc(795,180,30,0,2*Math.PI);
             pincel.closePath();
             pincel.stroke();
@@ -299,7 +299,7 @@ function dibujoPrincipal(parte) {
 
 
             pincel.beginPath();
-            pincel.strokeStyle = "black";
+            pincel.strokeStyle = "#0A3871";
             pincel.arc(795,180,30,0,2*Math.PI);
             pincel.closePath();
             pincel.stroke();
@@ -345,7 +345,7 @@ function dibujoPrincipal(parte) {
 
 
             pincel.beginPath();
-            pincel.strokeStyle = "black";
+            pincel.strokeStyle = "#0A3871";
             pincel.arc(795,180,30,0,2*Math.PI);
             pincel.closePath();
             pincel.stroke();
@@ -404,7 +404,7 @@ function dibujoPrincipal(parte) {
         pincel.moveTo(x1+2,80);
         pincel.lineTo(x2-5,80);
         pincel.lineWidth = 7;
-        pincel.strokeStyle = "black";
+        pincel.strokeStyle = "#0A3871";
         pincel.stroke();
 
         x1 = x2;

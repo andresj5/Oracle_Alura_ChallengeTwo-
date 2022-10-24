@@ -1,37 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Montserrat:wght@300&family=Open+Sans:ital,wght@1,500&display=swap');
 
-html, body {
-  width:  100%;
-  height: 100%;
-  margin: 0;
-}
-
 
 header{
-    display:flex;
+    background-color: #034d3b;
+    height: 80px;
+}
+.header-container{
+    display: flex;
     align-items: center;
-    background-color:aqua;
-    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #F3F5FC;
     
 }
 
-header .logo{
-    margin: 20px;
+.logo{
+
+    margin: 10px;
+    
 }
 
- header h3{
-    
-    font-size: 40px;
+.headerPrincipal-titulo{
+    background-color: #F3F5FC;
+    font-size: 23px;
+    margin-left: 50px;
     font-weight: bold;
-    text-align: right;
     font-family: 'Rubik', sans-serif;
+    color: #0A3871;
+    margin-left: 75px;
     
 }
+
+.header-nav{
+    padding: 10px
+}
+
+.nav-link{
+    display: block;
+    text-align: center;
+    font-weight: 50%;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px;
+	margin-bottom: 10px;
+	color: #F3F5FC;
+	background-color: #0A3871;
+	text-decoration: none;
+	transition: .5s;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.nav-link:hover {
+    background: rgb(79, 155, 241);
+    font-size: 15px;
+}
+
+
+
 
 .boton {
     font-family:'Rubik', sans-serif;;
-    color: #ffffff;
-    font-size: 17px;
+    color: #F3F5FC;
+    font-size: 13px;
     padding: 11px;
     margin: 7px;
     text-decoration: none;
@@ -44,56 +76,61 @@ header .logo{
     text-shadow: 0px 1px 6px #666666;
     border: solid #756e71 2px;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#45deba), to(#37a188));
-    background: -moz-linear-gradient(top, #45deba, #37a188);
+    background: -moz-linear-gradient(top, #0A3871, #1957a3);
 }
 
 .boton:hover {
-    background: #2c947a;
+    background: #0A3871;
 }
+
 
 .login{
-    background-color: #756e71;
-    height: 500px;
-    /*margin: 20px auto;*/
+    background-color: #F3F5FC;;
     display: flex;
-    flex-direction: column;
+    height: 400px;
     align-items: center;
     justify-content: center;
 }
 
-.agregar-palabra{
-    height: 500px;
-    background-color: #cc608f;
-    display:none;
+.botones-login{
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-.ingresoNuevaPalabra{
-    width: 40%;
-    height: 80px;
-    /*margin: 0 0 20px 10px;*/
-    padding: 20px;
-    font-family: 'Rubik', sans-serif;
-    color: #2c947a;
-    border: 4px solid #2c947a;
-    font-weight: 700;
-    font-size: 20px;
-    border-radius: 10px;
-    resize: none;
-  }
+}
 
 
-
-.juego{
-    background-color: #963e3e;
-    height:500px;
-    display: none;
-    align-items: center;
+.agregar-palabra{
+    background-color: #F3F5FC;
+    display:none;
+    height: 400px;
+    align-items:center;
     justify-content: center;
     flex-direction:column;
     
+    /* flex-wrap: wrap; */
+  }
+
+.ingresoNuevaPalabra{
+    width: 25%;
+    height: 80px;
+    display: flex;
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+    color: #012e81;
+    border: 4px solid #0A3871;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+    
+  }
+
+.juego{
+    
+    background-color: #F3F5FC;
+    display:none;
+    /*visibility: hidden;*/
+    height: 400px;
+    flex-direction:column;
+    flex-wrap: wrap;
 
 }
 .juego-container{
@@ -101,18 +138,20 @@ header .logo{
     align-items: center;
     justify-content: center;
     flex-direction:column;
+    flex-wrap: wrap;
 
 }
 .pantalla{
-    display: inline; 
+    display: flex;
+    flex-wrap: wrap; 
 }
 
 .canvas{
+    display: flex;
+    background-color: #F3F5FC;
+    width: auto;
+    height: 200px;
     
-    background-color: antiquewhite;
-    
-    width: 400px;
-    height: 250px;
 }
 
 .entrada{
@@ -123,10 +162,12 @@ header .logo{
 }
 
 .palabra-secreta{
-    background-color: antiquewhite;
-    width: 400px;
-    height: 150px;  
-    margin-top: 20px;
+    display: flex;
+    background-color: #F3F5FC;
+    width: auto;
+    height: 100px;  
+    margin-top: 15px;
+    
 }
 .botones-juego{
     margin-top:10px;
@@ -138,30 +179,79 @@ header .logo{
 
 footer{
     display: flex;
-    height:95px;
-    background-color: rgb(196, 192, 255);
+    height: 90px;
+    background-color: green;
+    
+}
+
+.footer-container{
+    
+    bottom:0; 
+    width: 100%;
+    display: flex;
+    height:90px;
+    background-color:#0A3871;
+    ;
     align-items: center;
     justify-content: center;
     flex-direction:column;
 }
 
 footer p {
+    display: flex;
     font-family: 'Rubik', sans-serif;
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #F3F5FC;
 }
 
 footer ul{
+    
     display: flex;
-    margin-left: 35%;
-    margin-top: 10px;
-
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
+
 footer li img{
+    display: flex;
     width: 30px;
     height: 30px;
-    margin: 3px;
+    margin: 5px;
     
+}
+
+footer li img:hover{
+    display:flex;
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width:851px){
+
+    .headerPrincipal{
+        height: 150px;
+
+    }
+    .login{
+        height: 500px;
     
-    
+    }
+    .agregar-palabra{
+        height: 500px;
+    }
+
+    .juego{
+        height: 600px;
+    }
+    .juego-container{
+        margin-top:70px;
+    }
+
+    .footer-container{
+        height:200px;
+    }
+
+
+
 }
